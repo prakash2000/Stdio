@@ -1,0 +1,13 @@
+<div class="card">
+    <div class="card-header">
+        Student List
+    </div>
+    <div class="card-body">
+        <ul class="list-group">
+            <li class="list-group-item" *ngFor="let stu of students; index as i;">
+              <input class="form-check-input me-1" type="checkbox" value="" id="{{stu.id}}">
+              <label class="form-check-label" for="firstCheckbox">{{stu.name}} -  {{stu.class}}</label>
+            </li>
+          </ul>
+    </div>
+</div>
